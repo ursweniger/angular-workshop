@@ -4,7 +4,8 @@ const { exec } = require('child_process');
 const util = require('util');
 
 const execPromise = util.promisify(exec);
-const directories = ['Aufgabe1'];
+const directories = ['Aufgabe0', 'Aufgabe1'];
+const appName = "hdm-events-app";
 
 async function installModules(dir) {
     try {
@@ -24,7 +25,7 @@ async function installModules(dir) {
 
 async function initialize(baseDir) {
     for (const subDir of directories) {
-        const fullDir = path.join(baseDir, subDir);
+        const fullDir = path.join(baseDir, subDir, appName);
         const packageJsonPath = path.join(fullDir, 'package.json');
         try {
             await fs.access(packageJsonPath);

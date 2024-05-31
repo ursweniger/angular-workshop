@@ -5,6 +5,7 @@ In dieser Übung werden wir eine neue Angular-Anwendung erstellen und starten.
 ## Voraussetzungen
 
 Stelle sicher, dass Node.js und npm auf deinem Rechner installiert sind. Du kannst dies überprüfen, indem du die folgenden Befehle in deinem Terminal ausführst:
+Angular CLI benötigt mindestens Node.js V18.19
 
 ```bash
 node -v
@@ -24,6 +25,7 @@ Nachdem Angular CLI installiert ist, können wir ein neues Angular-Projekt erste
 ```bash
 ng new hdm-events-app
 ```
+(Bei den Setup-Fragen kann nach Vorlieben entschieden werden. Für diese Übung verwenden wir jedoch vorerst CSS und kein SSR.)
 
 ## 3. Projekt starten
 Wechsle in das Verzeichnis des neu erstellten Projekts und starte die Anwendung:
