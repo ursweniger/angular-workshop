@@ -1,0 +1,5 @@
+<ul>
+  @for (campusEvent of campusEvents; track campusEvent.id) {
+    <app-campus-event-list-item [campusEvent]="campusEvent" />
+  }
+</ul>

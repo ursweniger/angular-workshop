@@ -1,9 +1,9 @@
 <div>
   <h1>{{ heading }}</h1>
-  <button (click)="toggleShowEvents()">
-    {{ showEventsButtonLabel }}
+  <button (click)="toggleShowCampusEvents()">
+    {{ showCampusEventsButtonLabel }}
   </button>
-  @if (showEvents) {
-    <app-event-list />
+  @if (showCampusEvents) {
+    <app-campus-event-list />
   }
 </div>

@@ -17,19 +17,19 @@ Angular verwendet Komponenten, um die Benutzeroberfläche zu strukturieren. Wir 
 Angular CLI bietet uns ein Kommando, um eine neue Komponente zu erstellen. Führe den folgenden Befehl in der Kommandozeile aus:
 
 ```bash
-ng generate component /components/EventList
+ng generate component /components/CampusEventList
 ```
-Die neue Komponente ist jetzt im Verzeichnis `src/app/components/event-list` zu finden.
+Die neue Komponente ist jetzt im Verzeichnis `src/app/components/campus-event-list` zu finden.
 
 Ebenso benötigen wir eine Komponente für die einzelnen Events. Diese erstellen wir als Unterverzeichnis der EventList-Komponente:
 
 ```bash
-ng generate component /components/EventList/EventListItem
+ng generate component /components/CampusEventList/CampusEventListItem
 ```
 
 ## 3. Füge einen Type für Events hinzu
 
-Erstelle eine neue Datei `src/app/models/event.ts` und füge in dieser ein Interface für ein Event hinzu.
+Erstelle eine neue Datei `src/app/models/campus-event.ts` und füge in dieser ein Interface für ein Event hinzu.
 Ein Event soll folgende Eigenschaften haben:
 - `id` (number): Die eindeutige ID des Events
 - `name` (string): Der Name des Events
@@ -39,19 +39,19 @@ Ein Event soll folgende Eigenschaften haben:
 
 ## 4. Erstelle die Event-Liste
 
-Zuerst implementieren wir die einzelnen Event-Items. Dazu fügen wir in der `EventListItem`-Komponente eine Input-Property `event` hinzu, das ein Event-Objekt erwartet.
+Zuerst implementieren wir die einzelnen Event-Items. Dazu fügen wir in der `CampusEventListItem`-Komponente eine Input-Property `campusEvent` hinzu, das ein Event-Objekt erwartet.
 
-Im HTML der `EventListItem`-Komponente erstellen wir eine einfache Darstellung des Events. Gib dazu untereinander den Namen, das Datum, den Ort und Beschreibung des Events aus.
+Im HTML der `CampusEventListItem`-Komponente erstellen wir eine einfache Darstellung des Events. Gib dazu untereinander den Namen, das Datum, den Ort und Beschreibung des Events aus.
 Tipp: Nutze `@if` um nur Events anzuzeigen, die auch tatsächlich existieren.
 
 Danach befüllen wir die Event-Liste mit Dummy-Daten. Diese sind im Ordner "content" im root Verzeichnis des Workshops zu finden. 
-Importiere die Daten in die EventList-Komponente und speichere sie als state mit dem namen `events`. Denke an die Typisierung der Events.
+Importiere die Daten in die EventList-Komponente und speichere sie als state mit dem namen `campusEvents`. Denke an die Typisierung der Events.
 
-Anschließend können wir im HTML der `EventList`-Komponente die `EventListItem`-Komponente für jedes Event in der Liste rendern.
-Denke daran, das entsprechende Objekt an die Input-Property `event` zu übergeben.
+Anschließend können wir im HTML der `CampusEventList`-Komponente die `CampusEventListItem`-Komponente für jedes Event in der Liste rendern.
+Denke daran, das entsprechende Objekt an die Input-Property `campusEvent` zu übergeben.
 Tipp: Hierzu kann `@for` genutzt werden.
 
-Danach müssen wir nur noch die `EventList`-Komponente in der `AppRoot`-Komponente einbinden.
+Danach müssen wir nur noch die `CampusEventList`-Komponente in der `AppRoot`-Komponente einbinden.
 Füge ebenso ein passendes Heading der Seite ein, zum Beispiel "HdM Events".
 
 ## 5. Konditionelles Rendern der Event-Liste
@@ -59,6 +59,6 @@ Füge ebenso ein passendes Heading der Seite ein, zum Beispiel "HdM Events".
 Abschließend möchten wir die Event-Liste erst nach Click auf einen Button anzeigen.
 Füge dazu einen Button mit dem Label `Events anzeigen` in die `AppRoot`-Komponente ein.
 
-Mithilfe eines states `showEvents` in der `AppRoot`-Komponente können wir den Zustand speichern, ob die Events angezeigt werden sollen oder nicht.
-Erstelle eine Methode `toggleShowEvents()`, die den Zustand von `showEvents` umkehrt und führe diese bei Click des Buttons aus.
+Mithilfe eines states `showCampusEvents` in der `AppRoot`-Komponente können wir den Zustand speichern, ob die Events angezeigt werden sollen oder nicht.
+Erstelle eine Methode `toggleShowCampusEvents()`, die den Zustand von `showCampusEvents` umkehrt und führe diese bei Click des Buttons aus.
 

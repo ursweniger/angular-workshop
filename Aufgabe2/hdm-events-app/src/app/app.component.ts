@@ -1,23 +1,23 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { EventListComponent } from './components/event-list/event-list.component';
+import { CampusEventListComponent } from './components/campus-event-list/campus-event-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, EventListComponent],
+  imports: [RouterOutlet, CampusEventListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title: string = 'hdm-events-app';
   heading: string = 'HdM Events';
-  showEvents: boolean = false;
-  showEventsButtonLabel: string = 'Events anzeigen';
+  showCampusEvents: boolean = false;
+  showCampusEventsButtonLabel: string = 'Events anzeigen';
 
-  toggleShowEvents() {
-    this.showEvents = !this.showEvents;
-    this.showEventsButtonLabel = this.showEvents
+  toggleShowCampusEvents() {
+    this.showCampusEvents = !this.showCampusEvents;
+    this.showCampusEventsButtonLabel = this.showCampusEvents
       ? 'Events verbergen'
       : 'Events anzeigen';
   }

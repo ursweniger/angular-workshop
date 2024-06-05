@@ -1,4 +1,4 @@
-const Events = [
+const CampusEvents = [
   {
     id: 1,
     name: "Campus Sommerfest",
@@ -30,4 +30,4 @@ const Events = [
   },
 ];
 
-export default Events;
+export default CampusEvents;
