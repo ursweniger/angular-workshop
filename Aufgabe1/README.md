@@ -54,10 +54,11 @@ Tipp: Hierzu kann `@for` genutzt werden.
 Danach müssen wir nur noch die `EventList`-Komponente in der `AppRoot`-Komponente einbinden.
 Füge ebenso ein passendes Heading der Seite ein, zum Beispiel "HdM Events".
 
-## 5. Konditioneller Rendern der Event-Liste
+## 5. Konditionelles Rendern der Event-Liste
 
 Abschließend möchten wir die Event-Liste erst nach Click auf einen Button anzeigen.
-Füge dazu einen Button in die `AppRoot`-Komponente ein, der den Text "Events anzeigen" trägt.
+Füge dazu einen Button mit dem Label `Events anzeigen` in die `AppRoot`-Komponente ein.
+
 Mithilfe eines states `showEvents` in der `AppRoot`-Komponente können wir den Zustand speichern, ob die Events angezeigt werden sollen oder nicht.
 Erstelle eine Methode `toggleShowEvents()`, die den Zustand von `showEvents` umkehrt und führe diese bei Click des Buttons aus.
 
