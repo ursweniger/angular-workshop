@@ -42,16 +42,22 @@ Ein Event soll folgende Eigenschaften haben:
 Zuerst implementieren wir die einzelnen Event-Items. Dazu fügen wir in der `EventListItem`-Komponente eine Input-Property `event` hinzu, das ein Event-Objekt erwartet.
 
 Im HTML der `EventListItem`-Komponente erstellen wir eine einfache Darstellung des Events. Gib dazu untereinander den Namen, das Datum, den Ort und Beschreibung des Events aus.
-Tipp: Nutze die Angular-Direktive `*ngIf`, um nur Events anzuzeigen, die auch tatsächlich existieren. Diese muss dann auch in der Komponente importiert werden.
+Tipp: Nutze `@if` um nur Events anzuzeigen, die auch tatsächlich existieren.
 
 Danach befüllen wir die Event-Liste mit Dummy-Daten. Diese sind im Ordner "content" im root Verzeichnis des Workshops zu finden. 
 Importiere die Daten in die EventList-Komponente und speichere sie als state mit dem namen `events`. Denke an die Typisierung der Events.
 
 Anschließend können wir im HTML der `EventList`-Komponente die `EventListItem`-Komponente für jedes Event in der Liste rendern.
 Denke daran, das entsprechende Objekt an die Input-Property `event` zu übergeben.
-Tipp: Nutze die Angular-Direktive `*ngFor`, um über die Liste der Events zu iterieren.
+Tipp: Hierzu kann `@for` genutzt werden.
 
-Danach müssen wir nur noch die `EventList`-Komponente in der `AppComponent`-Komponente einbinden.
+Danach müssen wir nur noch die `EventList`-Komponente in der `AppRoot`-Komponente einbinden.
 Füge ebenso ein passendes Heading der Seite ein, zum Beispiel "HdM Events".
 
+## 5. Konditioneller Rendern der Event-Liste
+
+Abschließend möchten wir die Event-Liste erst nach Click auf einen Button anzeigen.
+Füge dazu einen Button in die `AppRoot`-Komponente ein, der den Text "Events anzeigen" trägt.
+Mithilfe eines states `showEvents` in der `AppRoot`-Komponente können wir den Zustand speichern, ob die Events angezeigt werden sollen oder nicht.
+Erstelle eine Methode `toggleShowEvents()`, die den Zustand von `showEvents` umkehrt und führe diese bei Click des Buttons aus.
 

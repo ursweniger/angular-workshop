@@ -1,3 +1,5 @@
 <ul>
-   <app-event-list-item *ngFor="let event of events" [event]="event"/>
+  @for (event of events; track event.id) {
+    <app-event-list-item [event]="event" />
+  }
 </ul>

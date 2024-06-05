@@ -1,6 +1,7 @@
-<li *ngIf="event">
-  <p>{{ event.name }}</p>
-  <p>{{ event.date }} - {{ event.location }}</p>
-  <p>{{ event.description }}</p>
-</li>
-
+@if (event) {
+  <li>
+    <p>{{ event.name }}</p>
+    <p>{{ event.date }} - {{ event.location }}</p>
+    <p>{{ event.description }}</p>
+  </li>
+}

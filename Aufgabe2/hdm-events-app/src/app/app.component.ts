@@ -10,6 +10,15 @@ import { EventListComponent } from './components/event-list/event-list.component
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'hdm-events-app';
-  heading = 'HdM Events';
+  title: string = 'hdm-events-app';
+  heading: string = 'HdM Events';
+  showEvents: boolean = false;
+  showEventsButtonLabel: string = 'Events anzeigen';
+
+  toggleShowEvents() {
+    this.showEvents = !this.showEvents;
+    this.showEventsButtonLabel = this.showEvents
+      ? 'Events verbergen'
+      : 'Events anzeigen';
+  }
 }
