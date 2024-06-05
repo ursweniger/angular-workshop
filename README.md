@@ -5,7 +5,7 @@ Abschließen entdecken wir zusätzlich die Backend Entwicklung mit NestJS und ve
 
 ## Voraussetzungen
 
-Stellt sicher, dass folgendes auf dem Rechenr installiert ist:
+Stellt sicher, dass folgendes auf dem Rechner installiert ist:
 - [Node.js](https://nodejs.org/) ( > 18.19 )
 
 Grundkenntnisse in HTML, CSS und JavaScript werden vorausgesetzt.

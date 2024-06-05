@@ -4,7 +4,7 @@ In dieser Übung werden wir eine neue Angular-Anwendung erstellen und starten.
 
 ## Voraussetzungen
 
-Stelle sicher, dass Node.js und npm auf deinem Rechner installiert sind. Du kannst dies überprüfen, indem du die folgenden Befehle in deinem Terminal ausführst:
+Stelle sicher, dass Node.js und npm auf deinem Rechner installiert sind. Du kannst dies überprüfen, indem du die folgenden Befehle in deiner Kommandozeile ausführst:
 Angular CLI benötigt mindestens Node.js V18.19
 
 ```bash
@@ -14,7 +14,7 @@ npm -v
 
 ## 1. Installation von Angular CLI
 
-Angular CLI ist ein Tool zur Erstellung und Verwaltung von Angular-Projekten. Um Angular CLI zu installieren, führe den folgenden Befehl in deinem Terminal aus:
+Angular CLI ist ein Tool zur Erstellung und Verwaltung von Angular-Projekten. Um Angular CLI zu installieren, führe den folgenden Befehl in deiner Kommandozeile aus:
 ```bash
 npm install -g @angular/cli
 ```
