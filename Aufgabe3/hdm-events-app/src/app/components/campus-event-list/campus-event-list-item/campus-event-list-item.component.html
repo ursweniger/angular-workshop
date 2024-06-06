@@ -1,7 +1,7 @@
 @if (campusEvent) {
-  <li>
-    <p>{{ campusEvent.name }}</p>
-    <p>{{ campusEvent.date }} - {{ campusEvent.location }}</p>
+  <li class="w-full flex flex-col gap-2 border-2 rounded-2xl text-start p-4">
+    <p class="text-lg text-primary font-bold">{{ campusEvent.name }}</p>
+    <p class="text-secondary">{{ campusEvent.date }} - {{ campusEvent.location }}</p>
     <p>{{ campusEvent.description }}</p>
   </li>
 }
