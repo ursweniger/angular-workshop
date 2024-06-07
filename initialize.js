@@ -4,7 +4,7 @@ const { exec } = require('child_process');
 const util = require('util');
 
 const execPromise = util.promisify(exec);
-const directories = ['Aufgabe0', 'Aufgabe1'];
+const directories = ['Aufgabe1', 'Aufgabe2', 'Aufgabe3'];
 const appName = "hdm-events-app";
 
 async function installModules(dir) {

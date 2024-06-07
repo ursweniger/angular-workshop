@@ -4,7 +4,7 @@ In dieser Übung werden wir unsere Campus-Events-App um eine Liste mit Events er
 
 ## 1. Entfernen von Boilerplate-Code
 
-Nachdem wir ein neues Angular-Projekt erstellt haben, müssen wir zunächst wir Boilerplate-Code entfernen, den Angular CLI für uns generiert hat.
+Nachdem wir ein neues Angular-Projekt erstellt haben, müssen wir zunächst Boilerplate-Code entfernen, den Angular CLI für uns generiert hat.
 
 Navigiere in das Verzeichnis des Projekts und öffne die Datei `src/app/app.component.html`. 
 
@@ -33,15 +33,15 @@ Erstelle eine neue Datei `src/app/models/campus-event.ts` und füge in dieser ei
 Ein Event soll folgende Eigenschaften haben:
 - `id` (number): Die eindeutige ID des Events
 - `name` (string): Der Name des Events
-- `date` (Date): Das Datum des Events
+- `date` (string): Das Datum des Events
 - `location` (string): Der Ort des Events
 - `description` (string): Eine Beschreibung des Events
 
 ## 4. Erstelle die Event-Liste
 
-Zuerst implementieren wir die einzelnen Event-Items. Dazu fügen wir in der `CampusEventListItem`-Komponente eine Input-Property `campusEvent` hinzu, das ein Event-Objekt erwartet.
+Zuerst implementieren wir die einzelnen Event-Items. Dazu fügen wir in der `CampusEventListItem`-Komponente ein Input-Property `campusEvent` hinzu, das ein Event-Objekt erwartet.
 
-Im HTML der `CampusEventListItem`-Komponente erstellen wir eine einfache Darstellung des Events. Gib dazu untereinander den Namen, das Datum, den Ort und Beschreibung des Events aus.
+Im HTML der `CampusEventListItem`-Komponente erstellen wir eine einfache Darstellung des Events. Gib dazu untereinander den Namen, das Datum mit Ort, sowie die Beschreibung des Events aus.
 Tipp: Nutze `@if` um nur Events anzuzeigen, die auch tatsächlich existieren.
 
 Danach befüllen wir die Event-Liste mit Dummy-Daten. Diese sind im Ordner "content" im root Verzeichnis des Workshops zu finden. 
@@ -61,4 +61,6 @@ Füge dazu einen Button mit dem Label `Events anzeigen` in die `AppRoot`-Kompone
 
 Mithilfe eines states `showCampusEvents` in der `AppRoot`-Komponente können wir den Zustand speichern, ob die Events angezeigt werden sollen oder nicht.
 Erstelle eine Methode `toggleShowCampusEvents()`, die den Zustand von `showCampusEvents` umkehrt und führe diese bei Click des Buttons aus.
+
+Bonus: Passe den Button so an, dass er je nach Anzeige der Events das Label wechselt.
 
