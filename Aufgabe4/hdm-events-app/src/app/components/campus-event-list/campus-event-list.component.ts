@@ -14,6 +14,6 @@ export class CampusEventListComponent {
   campusEvents: CampusEvent[] = [];
 
   constructor(private campusEventDataService: CampusEventDataService) {
-    this.campusEvents = this.campusEventDataService.getCampusEvents();
+    this.campusEvents = this.campusEventDataService.getAllCampusEvents();
   }
 }

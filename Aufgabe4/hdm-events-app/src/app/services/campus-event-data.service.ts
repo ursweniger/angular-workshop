@@ -10,7 +10,7 @@ export class CampusEventDataService {
 
   constructor() {}
 
-  public getCampusEvents() {
+  public getAllCampusEvents() {
     return this.campusEvents;
   }
 }
