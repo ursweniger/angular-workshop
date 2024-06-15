@@ -1,4 +1,4 @@
-# Aufgabe 4: Routing & Neue Campus-Events erstellen
+# Aufgabe 4: Routing
 
 In dieser Übung werden wir eine neue Seite erstellen, über die wir neue Campus-Events erstellen können. Für eine schöne UX soll diese Seite über eine eigene Route aufrufbar sein.
 

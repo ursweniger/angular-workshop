@@ -1,6 +1,6 @@
-# Aufgabe 3: Datenverarbeitung über Services
+# Aufgabe 3: Services
 
-In dieser Übung werden wir die Campus-Events in einen Service auslagern.
+In dieser Übung werden wir die Verwaltung der Campus-Events in einen Service auslagern.
 
 ## 1. Erstellung von einem neuen Service
 

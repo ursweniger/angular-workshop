@@ -1,3 +1,3 @@
-# Aufgabe 5: Asynchrone Operationen mit Rxjs
+# Aufgabe 5: Rxjs für asynchrone Operationen
 
 In dieser Übung...
