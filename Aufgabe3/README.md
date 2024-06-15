@@ -13,7 +13,7 @@ ng generate service /services/CampusEventData
 
 Nun solltest du zwei entsprechende Dateien im neuen Unterordner _src/app/services_ sehen können.
 
-## 2. Campus-Event-Daten über den Service abrufbar machen
+## 2. Campus-Event Daten über den Service abrufbar machen
 
 Als nächstes wollen wir die Campus-Event Daten in den Service holen und über eine Methode nach außen abrufbar machen.
 

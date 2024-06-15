@@ -1,0 +1,21 @@
+<div>
+  <div>
+    <input type="text" placeholder="Name" [(ngModel)]="newCampusEvent.name" />
+    <input
+      type="datetime-local"
+      placeholder="Datum"
+      [(ngModel)]="newCampusEvent.date"
+    />
+    <input
+      type="text"
+      placeholder="Ort"
+      [(ngModel)]="newCampusEvent.location"
+    />
+    <textarea
+      type="text"
+      placeholder="Beschreibung"
+      [(ngModel)]="newCampusEvent.description"
+    ></textarea>
+  </div>
+  <button (click)="onCreateClick()">Event erstellen</button>
+</div>
