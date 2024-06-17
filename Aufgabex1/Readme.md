@@ -1,34 +1,35 @@
-# Angular Workshop - Exercise 1
+# Workshop - Übung 1
 
-In this exercise, you will be working on adding new functionality to an Angular application. Follow the assignments below to complete the tasks.
+In dieser Übung werden der Basis NestJS Anwendung neue Funktionalitäten hinzugefügt. 
 
-## Assignment 1: Add a '/event:id' Route
+## Aufgabe 1: Fügen eine '/events/:id' Route hinzu
 
-1. Open the `app-routing.module.ts` file.
-2. Add a new route for the `/event:id` path.
-3. Configure the route to load the `EventComponent` when accessed.
-4. Make sure to pass the `id` parameter to the `EventComponent`.
+1. Öffnen die Datei `events.controller.ts`.
+2. Fügen Sie eine neue Route für den Pfad `/events/:id` hinzu.
+3. Konfigurieren Sie die Route so, dass sie mit hilfe des `EventsService` das entsprechende Event zurückgibt.
 
-## Assignment 2: Add a Middleware Logger
 
-1. Create a new file called `logger.middleware.ts`.
-2. Implement a middleware function that logs the incoming requests.
-3. Import and use the middleware in the `app.module.ts` file.
+## Aufgabe 2: Füge einen Middleware-Logger hinzu
 
-## Assignment 3: Add a Guard Pipe
+1. Erstellen eine neue Datei namens `logger.middleware.ts`. Dies funktioniert auch über die nest cli, indem bei `generate` als parameter `middleware` verwendet wird.
+2. Implementieren Sie eine Middleware-Funktion, die die eingehenden Anfragen protokolliert.
+3. Importiere und verwende die Middleware in einem beliebigen modul, und stelle sicher, dass die Middleware nur auf den `/events` Routen ausgeführt wird.
 
-1. Add a Pipe to verify the findOne Route is only calles when an integer ist used as path.
+## Aufgabe 3: Füge eine Validatione Pipe hinzu
 
-## Optional: Assignment 4: Create an Interface for TypeScript of CampusEvent
-1. Create a new file called `campus-event.interface.ts`.
-2. Define an interface named `CampusEvent` with the following properties:
-    - `id` of type `number`
-    - `name` of type `string`
-    - `date` of type `Date`
-    - `location` of type `string`
-    - `description` of type `string`
-3. Export the `CampusEvent` interface from the file.
-4. Import and use the `CampusEvent` interface in the appropriate files where the `CampusEvent` object is used.
+1. Füge eine Pipe hinzu, um sicherzustellen, dass die `findOne`-Route nur aufgerufen wird, wenn ein Integer als Pfad verwendet wird.
 
-Remember to test your changes and make sure everything is working as expected.
+## Optional: Aufgabe 4: Erstelle ein Interface für TypeScript von CampusEvent (wird später nicht mehr benötigt)
+
+1. Erstelle eine neue Datei namens `campus-event.interface.ts`.
+2. Definiere ein Interface mit dem Namen `CampusEvent` mit den folgenden Eigenschaften:
+    - `id` vom Typ `number`
+    - `name` vom Typ `string`
+    - `date` vom Typ `Date`
+    - `location` vom Typ `string`
+    - `description` vom Typ `string`
+3. Exportiere `CampusEvent` aus der Datei.
+4. Importiere und verwende  `CampusEvent` in den entsprechenden Dateien, in denen das `CampusEvent`-Objekt verwendet wird.
+
+Denken Sie daran, Ihre Änderungen zu testen und sicherzustellen, dass alles wie erwartet funktioniert.
 

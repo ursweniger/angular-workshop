@@ -13,7 +13,7 @@ export class EventsController {
     }
 
     @Get(':id')
-    async findOne(@Param('id') id: number): Promise<CampusEvent> {
+    async findOne(@Param('id') id: string): Promise<CampusEvent> {
         return this.eventsService.findOne(id);
     }
 
@@ -24,5 +24,7 @@ export class EventsController {
     }
 
     @Delete(':id')
-    async delete(id: number): Promise<any> {}
+    async delete(@Param('id') id: string): Promise<any> {
+        return this.eventsService.delete(id);
+    }
 }
