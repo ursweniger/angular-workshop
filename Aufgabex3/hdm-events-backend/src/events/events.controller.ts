@@ -27,4 +27,9 @@ export class EventsController {
     async delete(@Param('id') id: string): Promise<any> {
         return this.eventsService.delete(id);
     }
+
+    @Delete()
+    async reset(): Promise<any>{
+        return this.eventsService.reset();
+    }
 }
