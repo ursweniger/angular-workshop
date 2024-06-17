@@ -26,7 +26,10 @@ export class CreateCampusEventPageComponent {
   ) {}
 
   public onCreateClick() {
-    this.campusEventDataService.createCampusEvent(this.newCampusEvent);
-    this.router.navigate(['/']);
+    this.campusEventDataService
+      .createCampusEvent(this.newCampusEvent)
+      .subscribe({
+        complete: () => this.router.navigate(['/']),
+      });
   }
 }

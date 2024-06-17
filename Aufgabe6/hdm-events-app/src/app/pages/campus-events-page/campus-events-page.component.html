@@ -1,0 +1,19 @@
+<div class="pb-4">
+  <button
+    class="max-w-52 border-2 rounded-2xl p-4 font-bold text-secondary mb-4"
+    (click)="toggleShowCampusEvents()"
+  >
+    {{ showCampusEventsButtonLabel }}
+  </button>
+  @if (showCampusEvents) {
+  <app-campus-event-list />
+  }
+</div>
+<div>
+  <button
+    class="max-w-52 border-2 rounded-2xl p-4 font-bold text-secondary"
+    routerLink="/create-campus-event"
+  >
+    {{ createCampusEventButtonLabel }}
+  </button>
+</div>
