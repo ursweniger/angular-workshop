@@ -5,8 +5,8 @@ In dieser Übung werden der Basis NestJS Anwendung neue Funktionalitäten hinzug
 ## Aufgabe 1: Fügen eine '/events/:id' Route hinzu
 
 1. Öffnen die Datei `events.controller.ts`.
-2. Fügen Sie eine neue Route für den Pfad `/events/:id` hinzu.
-3. Konfigurieren Sie die Route so, dass sie mit hilfe des `EventsService` das entsprechende Event zurückgibt.
+2. Fügen eine neue Route für den Pfad `/events/:id` hinzu.
+3. Konfigurieren die Route so, dass sie mit hilfe des `EventsService` das entsprechende Event zurückgibt.
 
 
 ## Aufgabe 2: Füge einen Middleware-Logger hinzu
@@ -31,5 +31,5 @@ In dieser Übung werden der Basis NestJS Anwendung neue Funktionalitäten hinzug
 3. Exportiere `CampusEvent` aus der Datei.
 4. Importiere und verwende  `CampusEvent` in den entsprechenden Dateien, in denen das `CampusEvent`-Objekt verwendet wird.
 
-Denken Sie daran, Ihre Änderungen zu testen und sicherzustellen, dass alles wie erwartet funktioniert.
+Denke daran, die Änderungen zu testen und sicherzustellen, dass alles wie erwartet funktioniert.
 
