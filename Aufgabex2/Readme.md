@@ -1,6 +1,6 @@
 # Datenbankanbindung
 
-Um die Datenbankanbindung mit Mongoose einzurichten, folgen Sie bitte den folgenden Schritten:
+Um die Datenbankanbindung mit Mongoose einzurichten, folge bitte den folgenden Schritten:
 
 ### 1. Installieren des Mongoose-Pakets im Projekt
 ```
