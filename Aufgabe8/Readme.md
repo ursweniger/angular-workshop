@@ -37,4 +37,6 @@ anlegen.
 
 Wenn du zuvor bereits ein Interface erstellt hast, kannst du das wiederverwenden und in ein DTO umbennen, und an den entsprechenden Stellen im Events-Controller als Typ angeben.
 
+### 7. Optional: Anpassen der Calls im Frontend
 
+Da wir nun nicht mehr auf das remote gehostete Backend zurückgreifen müssen, können wir einfach unsere localhost anwendung ansprechen. Passe dazu die Calls im ``campus-event-datat.service`` im Frontend an und beachte den entsprechenden Port zu verwenden (default 3000)
