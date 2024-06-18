@@ -14,6 +14,6 @@ export class EventsModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
      .apply(LoggerMiddleware)
-     .forRoutes({path: 'events', method: RequestMethod.GET});
+     .forRoutes({path: 'events', method: RequestMethod.ALL});
    }
 }

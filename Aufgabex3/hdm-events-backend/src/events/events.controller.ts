@@ -19,7 +19,6 @@ export class EventsController {
 
     @Post()
     async create(@Body() body: CreateCampusEventDto): Promise<CampusEvent> {
-        console.log(body)
         return this.eventsService.create(body);
     }
 
