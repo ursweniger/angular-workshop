@@ -1,0 +1,34 @@
+<div>
+  <div>
+    <input
+      class="p-1 rounded-xl border-2 m-2"
+      type="text"
+      placeholder="Name"
+      [(ngModel)]="newCampusEvent.name"
+    />
+    <input
+      class="p-1 rounded-xl border-2 m-2"
+      type="datetime-local"
+      placeholder="Datum"
+      [(ngModel)]="newCampusEvent.date"
+    />
+    <input
+      class="p-1 rounded-xl border-2 m-2"
+      type="text"
+      placeholder="Ort"
+      [(ngModel)]="newCampusEvent.location"
+    />
+    <textarea
+      class="p-1 rounded-xl border-2 m-2 align-middle"
+      type="text"
+      placeholder="Beschreibung"
+      [(ngModel)]="newCampusEvent.description"
+    ></textarea>
+  </div>
+  <button
+    class="max-w-52 border-2 rounded-2xl p-4 font-bold text-secondary m-4"
+    (click)="onCreateClick()"
+  >
+    Event erstellen
+  </button>
+</div>
