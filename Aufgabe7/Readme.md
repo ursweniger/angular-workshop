@@ -2,7 +2,7 @@
 
 In dieser Übung werden der Basis NestJS Anwendung neue Funktionalitäten hinzugefügt. 
 
-## Aufgabe 1: Fügen eine '/events/:id' Route hinzu
+## Aufgabe 1: Füge eine '/events/:id' Route hinzu
 
 1. Öffnen die Datei `events.controller.ts`.
 2. Fügen eine neue Route für den Pfad `/events/:id` hinzu.
