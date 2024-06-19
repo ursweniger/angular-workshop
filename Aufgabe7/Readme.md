@@ -1,4 +1,4 @@
-# Workshop - Übung 1
+# Aufgabe 7
 
 In dieser Übung werden der Basis NestJS Anwendung neue Funktionalitäten hinzugefügt. 
 
