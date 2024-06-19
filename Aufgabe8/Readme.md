@@ -1,4 +1,4 @@
-# Datenbankanbindung
+# Aufgabe 7: Datenbankanbindung
 
 Um die Datenbankanbindung mit Mongoose einzurichten, folge bitte den folgenden Schritten:
 
